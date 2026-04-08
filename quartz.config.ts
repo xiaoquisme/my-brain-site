@@ -8,16 +8,17 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "My Brain Wiki",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: process.env.GOOGLE_ANALYTICS_ID ?? "G-19PGC8Z702",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    locale: "zh-CN",
+    baseUrl: "xiaoquisme.github.io/my-brain-site",
+    ignorePatterns: ["private", "templates", ".obsidian", "scripts", "CLAUDE.md", "README.md", "log.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
