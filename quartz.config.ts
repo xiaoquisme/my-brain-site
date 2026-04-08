@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       tagId: process.env.GOOGLE_ANALYTICS_ID ?? "G-19PGC8Z702",
     },
     locale: "zh-CN",
-    baseUrl: "xiaoquisme.github.io/my-brain-site",
+    baseUrl: "brain.xiaoquisme.com",
     ignorePatterns: ["private", "templates", ".obsidian", "scripts", "CLAUDE.md", "README.md", "log.md"],
     defaultDateType: "modified",
     theme: {
